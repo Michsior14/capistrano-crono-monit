@@ -20,7 +20,6 @@ And then execute:
 ```
 
 ## Dependencies
-- crono
 - capistrano-crono 0.1.2
 
 ## Customizing the monit crono templates
