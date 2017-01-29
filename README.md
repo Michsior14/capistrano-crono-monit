@@ -1,6 +1,6 @@
 # Capistrano::Crono::Monit
 
-Crono integration with Capistrano & Monit
+Monit integration with capistrano-crono
 
 ## Installation
 

@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version = Capistrano::Crono::Monit::VERSION
   spec.authors = ['Michal Mrozek']
   spec.email = ['michalmrozek@wp.pl']
-  spec.description = spec.summary = %q{Crono monit integration for Capistrano v3}
+  spec.description = spec.summary = %q{Monit integration with capistrano-crono}
   spec.homepage = 'https://github.com/Michsior14/capistrano-crono-monit'
   spec.license = 'MIT'
 
