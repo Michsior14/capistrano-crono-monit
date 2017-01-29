@@ -12,11 +12,11 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/Michsior14/capistrano-crono-monit'
   spec.license = 'MIT'
 
-  spec.add_runtime_dependency 'crono'
-  spec.add_runtime_dependency 'capistrano', '>= 3.0.0'
+  spec.add_runtime_dependency 'crono', '~> 0'
+  spec.add_runtime_dependency 'capistrano', '~> 3.0', '>= 3.0.0'
   spec.add_runtime_dependency 'capistrano-crono', '0.1.2'
 
   spec.required_ruby_version = '>= 1.9.3'
-  spec.files = `git ls-files`.split('\n')
+  spec.files = `git ls-files`.split($/)
   spec.require_paths = ['lib']
 end
