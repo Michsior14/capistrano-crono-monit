@@ -1,0 +1,7 @@
+# Monit configuration for Crono
+# Service name: <%= crono_monit_service_name %>
+#
+check process <%= crono_monit_service_name %>
+with pidfile "<%= fetch(:crono_pid) %>"
+start program = "/usr/bin/sudo -iu <%= @role.user %> /bin/bash -c 'cd <%= current_path %> && <%= SSHKit.config.command_map[:bundle] %> exec crono --daemonize --pidfile <%= fetch(:crono_pid) %>  --logfile <%= fetch(:crono_log) %> --environment <%= fetch(:crono_env) %>'"
+stop program = "kill -TERM `cat <%= fetch(:crono_pid) %>`
