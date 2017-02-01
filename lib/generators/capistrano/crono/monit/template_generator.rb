@@ -6,7 +6,7 @@ module Capistrano
 
           namespace "capistrano:crono:monit:template"
           desc "Create local monitrc.erb, and erb files for monitored processes for customization"
-          source_root File.expand_path('../../../../../capistrano/templates', __FILE__)
+          source_root File.expand_path('../../../../../capistrano/crono/templates', __FILE__)
           argument :templates_path, type: :string,
             default: "config/deploy/templates",
             banner: "path to templates"
